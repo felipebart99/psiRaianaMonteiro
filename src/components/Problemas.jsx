@@ -8,43 +8,38 @@ const Problemas = () => {
         <div className="problema destaque">
           <h3>Ansiedade</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            provident
+            Preocupações excessivas que não conseguia controlar, sensação constante de que algo ruim vai acontecer.
           </p>
         </div>
-        <div className="problema">
-          <h3>Sobrecarga</h3>
+        <div className="problema destaque2">
+          <h3>Sobrecarga Emocional</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            provident
+            Sensação de estar sempre no limite, sentimento de estar sobrecarregado com tarefas simples.
           </p>
         </div>
         <div className="problema destaque">
           <h3>Estresse constante</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            provident
+            Pensamentos acelerados que não desaceleram, dificuldade de concentração e memória.
           </p>
         </div>
-        <div className="problema">
-          <h3>Ansiedade</h3>
+        <div className="problema destaque2">
+          <h3>Oscilações de Humor</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            provident
+            Reações desproporcionais a pequenos acontecimentos do dia a dia, Arrependimento frequente,  irritabilidade.
           </p>
         </div>
         <div className="problema destaque">
-          <h3>Ansiedade</h3>
+          <h3>Problemas de Sono</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            provident
+           Sonolência excessiva como escape emocional
+pesadelos recorrentes ou sonhos perturbadores.
           </p>
         </div>
-        <div className="problema">
-          <h3>Ansiedade</h3>
+        <div className="problema destaque2">
+          <h3>Crise Pessoal</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            provident
+            Crise de identidade ou valores, busca por propósito e significado.
           </p>
         </div>
       </div>

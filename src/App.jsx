@@ -63,6 +63,8 @@ function App() {
           <div className="pacientes">
             <div className="paciente">
               <h2>Paciente anônimo</h2>
+              <div className="star-rating">
+  ★★★★★</div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus cupiditate eos neque repudiandae hic libero nam
@@ -72,6 +74,8 @@ function App() {
             </div>
             <div className="paciente">
               <h2>Paciente anônimo</h2>
+              <div className="star-rating">
+  ★★★★★</div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus cupiditate eos neque repudiandae hic libero nam
@@ -88,36 +92,29 @@ function App() {
               <span>1</span>
               <h3>WhatsApp</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis, deserunt! Consequuntur magnam rerum dicta mollitia
-                accusamus, reprehenderit ipsantium!
+                Envie uma mensagem para que possamos conversar sobre suas necessidades e encontrar o melhor tipo de atendimento para você
               </p>
             </div>
             <div className="metodo">
               <span>2</span>
               <h3>Horário</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis, deserunt! Consequuntur magnam rerum dicta mollitia
-                accusamus, reprehenderit ipsantium!
+                Definiremos o melhor horário.
+Juntos vamos escolher um horário que se encaixe na sua rotina. Ofereço flexibilidade de horários, incluindo atendimentos no início da manhã e fim da tarde para sua conveniência.
               </p>
             </div>
             <div className="metodo">
               <span>3</span>
               <h3>Pagamento</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis, deserunt! Consequuntur magnam rerum dicta mollitia
-                accusamus, reprehenderit ipsantium!
+                Para confirmar o agendamento é necessário realizar o pagamento. Enviarei todas as informações bancárias após a confirmação do horário
               </p>
             </div>
             <div className="metodo">
               <span>4</span>
               <h3>Instruções</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis, deserunt! Consequuntur magnam rerum dicta mollitia
-                accusamus, reprehenderit ipsantium!
+                Antes do atendimento, enviarei um guia com informações importantes e um link de acesso (para consultas online). Para presencial, o endereço completo e orientações de acesso serão fornecidos.
               </p>
             </div>
           </div>
