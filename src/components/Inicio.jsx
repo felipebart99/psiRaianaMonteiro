@@ -1,4 +1,4 @@
-import Bannerpam from "../assets/Bannerpam.png";
+import Bannerpam from "../assets/BannerPam.png";
 const Inicio = () => {
   return (
     <section id="inicio">
