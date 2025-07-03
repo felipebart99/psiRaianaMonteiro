@@ -7,6 +7,7 @@ import Gestalt from "./components/Gestalt";
 import terapiaImg from "../src/assets/psicoterapia.webp";
 import pampam from "../src/assets/pampam.png";
 import FAQ from "./components/Faq";
+import Typewriter from "../src/components/Typewriter";
 
 function App() {
   return (
@@ -44,7 +45,9 @@ function App() {
           <img src={pampam} />
           <div className="principal">
             <h2>Sobre mim</h2>
-            <h3>Pamela Sousa</h3>
+            <h3>
+              <Typewriter text=" Pamela Sousa" speed={200} startOnView={true} />
+            </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
               saepe quae voluptatem quidem nam possimus. Fuga exercitationem
@@ -52,41 +55,14 @@ function App() {
               blanditiis reiciendis. Modi, natus.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              recusandae eos obcaecati ipsam, similique corporis molestias quae
-              amet quidem, temporibus nihil, ipsa illo fugit delectus!
-              Dignissimos suscipit id corrupti maiores.
+              Atendo a partir da perspectiva da <strong>Gestalt-terapia</strong>{" "}
+              e atualmente estou em formação em
+              <strong> Psicologia Transpessoal</strong>.
             </p>
             <button>ENTRAR EM CONTATO</button>
           </div>
         </section>
 
-        <section id="depoimentos">
-          <h2>Depoimentos</h2>
-          <h3>O que dizem os pacientes?</h3>
-          <div className="pacientes">
-            <div className="paciente">
-              <h2>Paciente anônimo</h2>
-              <div className="star-rating">★★★★★</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus cupiditate eos neque repudiandae hic libero nam
-                eveniet impedit error vel. Reprehenderit at laborum laboriosam
-                nulla incidunt eveniet accusantium repellat! Culpa.
-              </p>
-            </div>
-            <div className="paciente">
-              <h2>Paciente anônimo</h2>
-              <div className="star-rating">★★★★★</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus cupiditate eos neque repudiandae hic libero nam
-                eveniet impedit error vel. Reprehenderit at laborum laboriosam
-                nulla incidunt eveniet accusantium repellat! Culpa.
-              </p>
-            </div>
-          </div>
-        </section>
         <section id="agendamento">
           <h2>Como agendar?</h2>
           <div className="metodos">

@@ -28,6 +28,20 @@ html {
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
+.cursor {
+  animation: blink 1s infinite;
+  color: #333;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 /* Espaçamento entre seções */
 section {
   min-height: 60vh;
@@ -71,10 +85,10 @@ button:hover {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 50px;
 
       h1 {
         font-size: large;
+        margin-bottom: 50px;
       }
       h2 {
         color: rgb(99, 17, 17);
@@ -95,35 +109,57 @@ button:hover {
     margin-bottom: 2rem;
   }
 }
-#problems {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h2 {
-    margin-bottom: 40px;
-  }
-  .principal {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+/* Estilos do Accordion */
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-    .problema {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 2px solid black;
-      padding: 10px;
-      h3 {
-        color: rgb(99, 17, 17);
-      }
-    }
-  }
-  .destaque {
-    background-color: rgba(250, 235, 215, 0.348);
-  }
-  .destaque2 {
-    background-color: #f8f8ec;
-  }
+.accordion-item {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-item.destaque {
+  background-color: #f8f9fa;
+  border-left: 4px solid #6f42c1;
+}
+
+.accordion-item.destaque2 {
+  background-color: #f0f8ff;
+  border-left: 4px solid #3498db;
+}
+
+.accordion-header {
+  padding: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.accordion-content {
+  padding: 0 1.2rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-content p {
+  padding: 1rem 0;
+  margin: 0;
 }
 #gestalt {
   background-color: antiquewhite;
@@ -185,24 +221,7 @@ button:hover {
     max-width: 600px;
   }
 }
-#depoimentos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  .pacientes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1000px;
-    gap: 20px;
 
-    .paciente {
-      border: 2px solid black;
-      padding: 20px;
-    }
-  }
-}
 #agendamento {
   background-color: antiquewhite;
   display: flex;
@@ -253,12 +272,11 @@ button:hover {
       gap: 0;
 
       .description {
-        gap: 32px;
         margin-top: -20px;
       }
       img {
         width: 100%;
-        height: 500px;
+        height: 450px;
         margin-bottom: 0;
         padding-bottom: 0;
       }
@@ -286,6 +304,9 @@ button:hover {
   }
   #psicoterapia {
     flex-direction: column-reverse;
+    .principal {
+      padding: 10px;
+    }
     img {
       width: 70vw;
     }
@@ -296,11 +317,7 @@ button:hover {
       height: 50vh;
     }
   }
-  #depoimentos {
-    .pacientes {
-      grid-template-columns: 1fr;
-    }
-  }
+
   #agendamento {
     .metodos {
       grid-template-columns: 1fr;
