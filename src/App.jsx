@@ -21,15 +21,19 @@ function App() {
           <div className="principal">
             <h2>Como funciona a Psicoterapia?</h2>
             <p>
-              Lorem, ipsum dolor sit amet conseci aperiam saepe henderit rerum
-              adipisci, inventore molestias facere reiciendis ex quae dolorem et
-              quasi unde.
+              A psicoterapia é um processo de <strong>autoconhecimento</strong>{" "}
+              que ajuda a identificar padrões emocionais e comportamentais que
+              causam sofrimento. Através de um <strong>diálogo</strong>{" "}
+              acolhedor com o psicólogo, o paciente desenvolve novas
+              perspectivas e ferramentas para lidar com desafios pessoais e
+              relacionamentos.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
-              aspernatur sunt minima perferendis, nam autem suscipit similique
-              nesciunt adipisci est voluptate odit amet iure cupiditate modi
-              tempore ducimus corporis perspiciatis?
+              Com técnicas específicas adaptadas a cada pessoa, a terapia
+              promove mudanças profundas e duradouras, aliviando sintomas como
+              <strong> ansiedade e estresse</strong>, e fortalecendo a
+              capacidade de enfrentar crises com mais{" "}
+              <strong>equilíbrio e autonomia</strong>.
             </p>
             <button>Mais Informações</button>
           </div>
@@ -63,8 +67,7 @@ function App() {
           <div className="pacientes">
             <div className="paciente">
               <h2>Paciente anônimo</h2>
-              <div className="star-rating">
-  ★★★★★</div>
+              <div className="star-rating">★★★★★</div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus cupiditate eos neque repudiandae hic libero nam
@@ -74,8 +77,7 @@ function App() {
             </div>
             <div className="paciente">
               <h2>Paciente anônimo</h2>
-              <div className="star-rating">
-  ★★★★★</div>
+              <div className="star-rating">★★★★★</div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus cupiditate eos neque repudiandae hic libero nam
@@ -92,29 +94,37 @@ function App() {
               <span>1</span>
               <h3>WhatsApp</h3>
               <p>
-                Envie uma mensagem para que possamos conversar sobre suas necessidades e encontrar o melhor tipo de atendimento para você
+                Envie uma mensagem para que possamos conversar sobre suas
+                necessidades e encontrar o melhor tipo de atendimento para você
               </p>
             </div>
             <div className="metodo">
               <span>2</span>
               <h3>Horário</h3>
               <p>
-                Definiremos o melhor horário.
-Juntos vamos escolher um horário que se encaixe na sua rotina. Ofereço flexibilidade de horários, incluindo atendimentos no início da manhã e fim da tarde para sua conveniência.
+                Definiremos o melhor horário. Juntos vamos escolher um horário
+                que se encaixe na sua rotina. Ofereço flexibilidade de horários,
+                incluindo atendimentos no início da manhã e fim da tarde para
+                sua conveniência.
               </p>
             </div>
             <div className="metodo">
               <span>3</span>
               <h3>Pagamento</h3>
               <p>
-                Para confirmar o agendamento é necessário realizar o pagamento. Enviarei todas as informações bancárias após a confirmação do horário
+                Para confirmar o agendamento é necessário realizar o pagamento.
+                Enviarei todas as informações bancárias após a confirmação do
+                horário
               </p>
             </div>
             <div className="metodo">
               <span>4</span>
               <h3>Instruções</h3>
               <p>
-                Antes do atendimento, enviarei um guia com informações importantes e um link de acesso (para consultas online). Para presencial, o endereço completo e orientações de acesso serão fornecidos.
+                Antes do atendimento, enviarei um guia com informações
+                importantes e um link de acesso (para consultas online). Para
+                presencial, o endereço completo e orientações de acesso serão
+                fornecidos.
               </p>
             </div>
           </div>
