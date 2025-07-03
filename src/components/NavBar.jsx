@@ -1,4 +1,3 @@
-import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/logoPam.png"; // Ajuste o caminho conforme sua estrutura
 
