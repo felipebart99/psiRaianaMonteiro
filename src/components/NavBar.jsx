@@ -16,9 +16,7 @@ const NavBar = () => {
         <Navbar.Brand href="#inicio" onClick={() => handleScroll("inicio")}>
           <img
             src={logo}
-            height="100"
-            width="200"
-            className="d-inline-block align-top"
+            className="d-inline-block align-top logo-img"
             alt="Logo Psicóloga"
           />
         </Navbar.Brand>
