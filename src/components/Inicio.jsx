@@ -1,4 +1,4 @@
-import Bannerpam from "../../dist/assets/BannerPam-B4apFD7k.png";
+import Bannerpam from "../assets/BannerPam.png";
 import Typewriter from "./Typewriter";
 import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 
