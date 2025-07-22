@@ -1,5 +1,6 @@
-import Bannerpam from "../assets/BannerPam.png";
+import Bannerpam from "../../dist/assets/BannerPam-B4apFD7k.png";
 import Typewriter from "./Typewriter";
+import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 
 const Inicio = () => {
   return (
@@ -27,9 +28,16 @@ const Inicio = () => {
             O primeiro passo para o cuidado e transformação de si está no
             <strong> autoconhecimento</strong> e no cultivo da criatividade.
           </p>
-          <button>Agendar sessão</button>
+          <a
+            href={whatsAppLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            Agendar sessão
+          </a>
         </div>
-        <img src={Bannerpam} />
+        <img src={Bannerpam} loading="eager" alt="imagem da psicóloga" />
       </div>
     </section>
   );

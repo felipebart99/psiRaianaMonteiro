@@ -1,5 +1,6 @@
 import pampam from "../assets/pampam.png";
 import Typewriter from "../../src/components/Typewriter";
+import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 
 const Sobre = () => {
   return (
@@ -21,7 +22,14 @@ const Sobre = () => {
           atualmente estou em formação em
           <strong> Psicologia Transpessoal</strong>.
         </p>
-        <button>ENTRAR EM CONTATO</button>
+        <a
+          href={whatsAppLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary"
+        >
+          Entrar em Contato
+        </a>
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 const Agendamento = () => {
   return (
     <section id="agendamento">
@@ -40,7 +41,14 @@ const Agendamento = () => {
           </p>
         </div>
       </div>
-      <button>AGENDAR CONSULTA</button>
+      <a
+        href={whatsAppLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary"
+      >
+        Agendar Consulta
+      </a>
     </section>
   );
 };

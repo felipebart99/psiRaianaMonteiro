@@ -1,15 +1,11 @@
 import React from "react";
-import "./WhatsAppButton.css"; // Estilos separados
+import "./WhatsAppButton.css";
+import { whatsAppLink } from "./WhatsAppLink"; // ajuste o caminho conforme sua pasta
 
 const WhatsAppButton = () => {
-  const phoneNumber = "558488708809";
-  const message = "Olá, gostaria de mais informações sobre seu atendimento.";
-  const encodedMessage = encodeURIComponent(message);
-  const whatsappLink = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
-
   return (
     <a
-      href={whatsappLink}
+      href={whatsAppLink}
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"

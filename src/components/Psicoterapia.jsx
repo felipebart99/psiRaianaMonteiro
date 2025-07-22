@@ -1,4 +1,5 @@
 import terapiaImg from "../assets/psicoterapia.webp";
+import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 
 const Psicoterapia = () => {
   return (
@@ -18,7 +19,14 @@ const Psicoterapia = () => {
           <strong> ansiedade e estresse</strong>, e fortalecendo a capacidade de
           enfrentar crises com mais <strong>equilíbrio e autonomia</strong>.
         </p>
-        <button>Mais Informações</button>
+        <a
+          href={whatsAppLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary"
+        >
+          Mais informações
+        </a>
       </div>
       <img src={terapiaImg} />
     </section>

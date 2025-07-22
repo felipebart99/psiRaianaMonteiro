@@ -1,5 +1,6 @@
 import React from "react";
 import { Accordion, Container } from "react-bootstrap";
+import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 
 const FAQ = () => {
   const faqItems = [
@@ -54,7 +55,10 @@ const FAQ = () => {
 
         <div className="text-center mt-4">
           <p className="text-muted">
-            Não encontrou sua dúvida? <a href="#contato">Entre em contato </a>
+            Não encontrou sua dúvida?{" "}
+            <a href={whatsAppLink} target="_blank">
+              Entre em contato{" "}
+            </a>
             conosco.
           </p>
         </div>
