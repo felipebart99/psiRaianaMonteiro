@@ -7,11 +7,11 @@ const Psicoterapia = () => {
       <div className="principal">
         <h2>Como funciona a Psicoterapia?</h2>
         <p>
-          A psicoterapia é um processo de <strong>autoconhecimento</strong> que
-          ajuda a identificar padrões emocionais e comportamentais que causam
-          sofrimento. Através de um <strong>diálogo</strong> acolhedor com o
-          psicólogo, o paciente desenvolve novas perspectivas e ferramentas para
-          lidar com desafios pessoais e relacionamentos.
+          A psicoterapia é um processo que ajuda a identificar padrões
+          emocionais e comportamentais que causam sofrimento. Através de um{" "}
+          <strong>diálogo</strong> acolhedor com o psicólogo, o paciente
+          desenvolve novas perspectivas e ferramentas para lidar com desafios
+          pessoais e relacionamentos.
         </p>
         <p>
           Com técnicas específicas adaptadas a cada pessoa, a terapia promove

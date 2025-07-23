@@ -26,7 +26,7 @@ const Inicio = () => {
             Venho oferecer um espaço de <strong>acolhimento e cuidado</strong>{" "}
             para te ajudar no seu processo de transformação e busca de sentidos.
             O primeiro passo para o cuidado e transformação de si está no
-            <strong> autoconhecimento</strong> e no cultivo da criatividade.
+            <strong> autoconhecimento</strong>.
           </p>
           <a
             href={whatsAppLink}
