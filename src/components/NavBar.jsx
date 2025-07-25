@@ -38,12 +38,6 @@ const NavBar = () => {
               Sobre Mim
             </Nav.Link>
             <Nav.Link
-              href="#depoimentos"
-              onClick={() => handleScroll("depoimentos")}
-            >
-              Depoimentos
-            </Nav.Link>
-            <Nav.Link
               href="#agendamento"
               onClick={() => handleScroll("agendamento")}
             >

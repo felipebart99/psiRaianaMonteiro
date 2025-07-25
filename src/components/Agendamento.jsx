@@ -16,10 +16,8 @@ const Agendamento = () => {
           <span>2</span>
           <h3>Horário</h3>
           <p>
-            Definiremos o melhor horário. Juntos vamos escolher um horário que
-            se encaixe na sua rotina. Ofereço flexibilidade de horários,
-            incluindo atendimentos no início da manhã e fim da tarde para sua
-            conveniência.
+            Juntos vamos escolher um horário que se encaixe na sua rotina.
+            Ofereço flexibilidade de horários para sua conveniência.
           </p>
         </div>
         <div className="metodo">
@@ -36,8 +34,7 @@ const Agendamento = () => {
           <h3>Instruções</h3>
           <p>
             Antes do atendimento, enviarei um guia com informações importantes e
-            um link de acesso (para consultas online). Para presencial, o
-            endereço completo e orientações de acesso serão fornecidos.
+            um link de acesso (para consultas online).
           </p>
         </div>
       </div>
