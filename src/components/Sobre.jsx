@@ -9,7 +9,7 @@ const Sobre = () => {
       <div className="principal">
         <h2>Sobre mim</h2>
         <h3>
-          <Typewriter text=" Pamela Sousa" speed={200} startOnView={true} />
+          <Typewriter text=" Pâmela Sousa" speed={200} startOnView={true} />
         </h3>
         <p>
           Sou apaixonada pelas relações humanas e pelo{" "}

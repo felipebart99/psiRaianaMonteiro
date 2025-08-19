@@ -7,21 +7,24 @@ const Inicio = () => {
     <section id="inicio">
       <div className="principal">
         <div className="description text-center text-md-start py-5">
-          <h1 className="title-main">
-            Pamela Sousa Psicóloga Clínica CRP 17/7870
-          </h1>
-          <h2 className="subtitle">Psicoterapia Presencial e Online</h2>
-          <h2>
+          <h1 className="title-main">Psicóloga Clínica CRP 17/7870</h1>
+          <h2 className="subtitle">Psicoterapia Presencial e Online </h2>
+          <h2> para adultos, crianças e adolescentes</h2>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "baseline",
+              gap: "8px",
+            }}
+          >
+            <i className="bi bi-geo-alt-fill"></i>
             <Typewriter
-              text="para adultos, crianças e
-            adolescentes"
+              text="Natal - Rio Grande do Norte"
               speed={70}
               startOnView={true}
             />
-          </h2>
-          <p>
-            <i className="bi bi-geo-alt-fill"></i> Natal - Rio Grande do Norte
-          </p>
+          </div>
           <p className="text-content">
             Venho oferecer um espaço de <strong>acolhimento e cuidado</strong>{" "}
             para te ajudar no seu processo de transformação e busca de sentidos.

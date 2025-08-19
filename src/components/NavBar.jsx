@@ -25,14 +25,11 @@ const NavBar = () => {
 
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="#inicio" onClick={() => handleScroll("inicio")}>
-              Início
-            </Nav.Link>
             <Nav.Link
               href="#psicoterapia"
               onClick={() => handleScroll("psicoterapia")}
             >
-              A Psicoterapia
+              Psicoterapia
             </Nav.Link>
             <Nav.Link href="#sobre" onClick={() => handleScroll("sobre")}>
               Sobre Mim

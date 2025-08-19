@@ -173,6 +173,8 @@ section {
   gap: 20px;
   h3 {
     color: rgb(99, 17, 17);
+    font-size: large;
+    font-weight: 700;
   }
 
   .principal {
@@ -267,7 +269,7 @@ section {
   border-color: rgba(0, 0, 0, 0.125);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .logo-img {
     width: 120px;
     height: 50px;
@@ -302,10 +304,7 @@ section {
   }
   #gestalt {
     flex-direction: column;
-    h3 {
-      font-size: large;
-      font-weight: 700;
-    }
+
     .cards {
       grid-template-columns: 1fr 1fr;
     }
