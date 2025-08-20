@@ -1,4 +1,5 @@
-import Bannerpam from "../assets/BannerPam.png";
+import Pamelinha from "../assets/pamelinha.png";
+
 import Typewriter from "./Typewriter";
 import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 
@@ -40,7 +41,7 @@ const Inicio = () => {
             Agendar sessão
           </a>
         </div>
-        <img src={Bannerpam} loading="eager" alt="imagem da psicóloga" />
+        <img src={Pamelinha} loading="eager" alt="imagem da psicóloga" />
       </div>
     </section>
   );
