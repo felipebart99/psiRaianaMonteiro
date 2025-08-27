@@ -61,6 +61,7 @@ section {
 }
 .navbar {
   width: 100vw;
+  background-color: #fed2d1;
 }
 .btn.btn-primary {
   background-color: #3498db;

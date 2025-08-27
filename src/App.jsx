@@ -18,7 +18,6 @@ function App() {
       <Psicoterapia />
       <Sobre />
       <Problemas />
-      <Gestalt />
       <Agendamento />
       <FAQ />
       <WhatsAppButton />

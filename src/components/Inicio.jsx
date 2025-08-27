@@ -10,7 +10,7 @@ const Inicio = () => {
         <div className="description text-center text-md-start py-5">
           <h1 className="title-main">Psicóloga Clínica CRP 17/7870</h1>
           <h2 className="subtitle">Psicoterapia Presencial e Online </h2>
-          <h2> para adultos, crianças e adolescentes</h2>
+          <h2> para adultos e adolescentes</h2>
 
           <div
             style={{
