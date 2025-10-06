@@ -10,7 +10,7 @@ const Formulario = () => {
 
           <form
             id="contactForm"
-            action="https://formsubmit.co/felipebart1999@gmail.com"
+            action="https://formsubmit.co/pamelabatistadeandrades@gmail.com"
             method="POST"
           >
             <div class="mb-3">
