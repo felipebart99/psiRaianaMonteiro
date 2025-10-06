@@ -29,10 +29,26 @@ const FAQ = () => {
       answer:
         "Sim, sigilo é um princípio ético fundamental. Tudo discutido nas sessões é confidencial, exceto em situações específicas previstas por lei que envolvam risco à vida.",
     },
+    {
+      question: "A psicoterapia online tem a mesma eficácia da presencial?",
+      answer:
+        "Sim. Diversos estudos mostram que a psicoterapia online é tão eficaz quanto a presencial, desde que realizada em um ambiente reservado, com boa conexão e comprometimento do paciente. O vínculo terapêutico e a qualidade do atendimento permanecem os mesmos.",
+    },
+    {
+      question:
+        "Como funciona a questão da privacidade e da confidencialidade?",
+      answer:
+        "A privacidade é uma prioridade. As sessões são realizadas em plataformas seguras e sigilosas, e todas as informações compartilhadas são protegidas pelo código de ética profissional do psicólogo, garantindo total confidencialidade do que é dito em sessão.",
+    },
+    {
+      question: "E se eu tiver dificuldade com a tecnologia?",
+      answer:
+        "Não há problema. Antes da primeira sessão, a psicóloga pode orientar você sobre como acessar a plataforma e realizar testes simples de áudio e vídeo. O processo é pensado para ser acessível mesmo para quem não tem muita familiaridade com tecnologia.",
+    },
   ];
 
   return (
-    <section id="faq" className="py-5 bg-light">
+    <section id="faq" className="py-5 ">
       <Container>
         <h2 className="text-center mb-5">Perguntas Frequentes</h2>
 
@@ -55,11 +71,10 @@ const FAQ = () => {
 
         <div className="text-center mt-4">
           <p className="text-muted">
-            Não encontrou sua dúvida?{" "}
+            Não encontrou sua dúvida?
             <a href={whatsAppLink} target="_blank">
-              Entre em contato{" "}
+              Pergunte aqui!
             </a>
-            conosco.
           </p>
         </div>
       </Container>

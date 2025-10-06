@@ -80,11 +80,16 @@ section {
 }
 #inicio {
   background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
   .principal {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    max-width: 1000px;
 
     .description {
       max-width: 800px;
@@ -262,6 +267,57 @@ section {
   }
 }
 
+#atendimento {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  h2,
+  h3 {
+    color: #2980b9;
+  }
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+  }
+}
+
+#beneficios {
+  background-color: #faf9fc;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+#beneficios h2 {
+  color: #297ad0;
+  font-weight: 600;
+}
+
+.beneficios-list {
+  list-style: none;
+  padding: 0;
+}
+
+.beneficios-list li {
+  background: #ffffff;
+  border-left: 5px solid #297ad0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.beneficios-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .accordion-button:not(.collapsed) {
   background-color: rgba(108, 117, 125, 0.05);
   color: #495057;
@@ -272,6 +328,50 @@ section {
   border-color: rgba(0, 0, 0, 0.125);
 }
 
+#formulario {
+  .closing {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+  }
+  .form-title {
+    color: #4a4a4a;
+    font-weight: 600;
+  }
+  .btn-primary {
+    background-color: #8e44ad;
+    border-color: #8e44ad;
+    transition: 0.3s;
+  }
+  .btn-primary:hover {
+    background-color: #732d91;
+    border-color: #732d91;
+  }
+  label {
+    font-weight: 500;
+    color: #555555;
+  }
+  .alert-success {
+    display: none;
+    margin-top: 20px;
+  }
+}
+#faq {
+  background-color: rgba(255, 192, 203, 0.37);
+  h2 {
+    color: rgb(99, 17, 17);
+  }
+}
 @media (max-width: 1024px) {
   .logo-img {
     width: 120px;
