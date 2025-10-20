@@ -1,38 +1,49 @@
-import pampam from "../assets/pampam.png";
+import raiana from "../assets/raiana.png";
 import Typewriter from "../../src/components/Typewriter";
 import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 
 const Sobre = () => {
   return (
     <section id="sobre">
-      <img src={pampam} />
+      <img src={raiana} />
       <div className="principal">
-        <h2>Sobre mim</h2>
+        <h2>Raiana Monteiro</h2>
         <h3>
-          <Typewriter text=" Pâmela Sousa" speed={200} startOnView={true} />
+          <Typewriter
+            text="Pesquisadora em Psicologia Social"
+            speed={100}
+            startOnView={true}
+          />
         </h3>
+
         <p>
-          Sou apaixonada pelas relações humanas e pelo{" "}
-          <strong>poder da escuta</strong>. Desde cedo, me interessei por
-          entender o comportamento das pessoas, suas histórias e formas únicas
-          de ver o mundo — e foi isso que me levou até a Psicologia.
+          Acredito numa psicologia que não reduz o sujeito ao sintoma, mas o
+          escuta em sua complexidade, suas potências e contradições.{" "}
+          <p>
+            {" "}
+            Formada pela Universidade Federal de Pernambuco e atualmente
+            mestranda em Psicologia pela mesma instituição, venho tecendo uma
+            prática guiada por duas linhas que se entrelaçam: a Gestalt-terapia
+            e a Esquizoanálise.{" "}
+          </p>{" "}
+          <p>
+            Atendo adolescentes e adultos em processos de autoconhecimento,
+            ansiedade, luto, autoestima, corpo e transições de vida.
+          </p>
+          <p>
+            {" "}
+            A clínica, para mim, é um espaço de encontro e criação, onde o
+            cuidado se faz no tempo de cada um, e onde o que antes era dor pode
+            se tornar linguagem, movimento, respiro.
+          </p>
+          <p>
+            {" "}
+            Trabalho de forma online, oferecendo uma escuta ética, sensível e
+            comprometida com o cuidado genuíno e o fortalecimento da potência de
+            viver.
+          </p>
         </p>
-        <p>
-          Atendo a partir da perspectiva da <strong>Gestalt-terapia</strong> e,
-          atualmente, estou em formação em
-          <strong> Psicologia Transpessoal</strong>.
-        </p>
-        <p>
-          Acredito que o processo terapêutico é uma jornada de{" "}
-          <strong>reconexão</strong> consigo mesmo, um espaço de acolhimento,
-          descoberta e transformação. Procuro conduzir cada atendimento com
-          empatia, sensibilidade e presença, respeitando o tempo e a
-          singularidade de cada pessoa.
-        </p>
-        <p>
-          Se você sente que é hora de olhar para si com mais cuidado e
-          gentileza, será um prazer te acompanhar nesse caminho.
-        </p>
+
         <a
           href={whatsAppLink}
           target="_blank"

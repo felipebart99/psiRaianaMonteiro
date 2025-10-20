@@ -49,7 +49,7 @@ html {
 /* Espaçamento entre seções */
 section {
   min-height: 60vh;
-  padding: 20px;
+  padding: 0px;
   padding-top: 80px;
   padding-bottom: 40px;
 }
@@ -79,7 +79,7 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 #inicio {
-  background-color: antiquewhite;
+  background-color: rgba(245, 240, 237, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,6 +90,7 @@ section {
     justify-content: center;
     align-items: center;
     max-width: 1000px;
+    gap: 80px;
 
     .description {
       max-width: 800px;
@@ -102,14 +103,14 @@ section {
         margin-bottom: 50px;
       }
       h2 {
-        color: rgb(99, 17, 17);
+        color: rgba(145, 86, 49, 1);
       }
     }
     img {
       height: 650px;
       width: 600px;
       border-radius: 2em;
-      margin-top: -100px;
+      padding-top: -100px;
     }
   }
 
@@ -205,6 +206,7 @@ section {
   }
 }
 #psicoterapia {
+  background-color: rgba(233, 229, 225, 1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,7 +237,15 @@ section {
     max-width: 600px;
   }
 }
-
+#problems {
+  background-color: rgba(245, 240, 237, 1);
+  position: relative;
+  img {
+    position: absolute;
+    top: 0; /* fica no topo */
+    left: 0; /* encosta na esquerda */
+  }
+}
 #agendamento {
   background-color: rgba(255, 255, 255, 0.337);
   display: flex;
@@ -268,15 +278,17 @@ section {
 }
 
 #atendimento {
-  background-color: antiquewhite;
+  background-color: rgba(149, 136, 154, 1);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 24px;
+  color: #ffffff;
   h2,
   h3 {
-    color: #2980b9;
+    color: #ffffff;
+    margin-bottom: 20px;
   }
   p {
     display: flex;

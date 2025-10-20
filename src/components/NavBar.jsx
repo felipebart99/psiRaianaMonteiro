@@ -1,5 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/logoPam.png"; // Ajuste o caminho conforme sua estrutura
+import logo from "../assets/logo.png";
 
 const NavBar = () => {
   // Função para rolagem suave

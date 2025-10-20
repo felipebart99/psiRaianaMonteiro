@@ -1,39 +1,35 @@
+import plantas from "../assets/plantas.jpg";
 const Atendimento = () => {
   return (
     <section id="atendimento">
-      <h2>Atendimento Online</h2>
-      <p>
-        A psicoterapia online é uma modalidade de serviço reconhecida e
-        regulamentada pelo Conselho Federal de Psicologia (CRP), com zelo pela
-        ética profissional, sigilo e eficácia.
-      </p>
-      <h3>Como funciona?</h3>
-      <div className="cards">
+      <div>
+        <h2>Como funciona uma sessão de psicoterapia comigo?</h2>
         <p>
-          Iniciamos pelo agendamento, entre em contato pelo WhatsApp e
-          combinaremos o melhor horário disponível para você.
+          Cada sessão dura em média 40 minutos e é um espaço de escuta e
+          acolhimento. O protagonismo está sempre com você: é a partir do que
+          traz que construímos o encontro.
         </p>
-        <p>
-          Será necessário um dispositivo (celular, tablet ou notebook) com
-          câmera, microfone e internet estável. O uso de fones de ouvido é
-          recomendado.
-        </p>
-        <p>
-          As sessões ocorrem através do GoogleMeet, sendo possível que sejam
-          realizadas por outra plataforma segura, caso aconteça algum problema
-          de conexão com a primeira. Pouco antes da sessão iniciar, eu te envio
-          o link de acesso à sala virtual.
-        </p>
-        <p>
-          A sessão online tem a mesma estrutura de uma presencial. Dura em torno
-          de 45 minutos e será um momento dedicado exclusivamente à você, seus
-          pensamentos, sentimentos e vivências. Juntos iremos traçar caminhos de
-          transformação pessoal possíveis.{" "}
-        </p>
-        <p>
-          Lembrando que é importante que a sessão seja realizada em um ambiente
-          privativo, seguro e confortável.
-        </p>
+        <div className="cards">
+          <p>
+            Minha prática se orienta pela Gestalt-terapia e pela Esquizoanálise,
+            abordagens que valorizam a singularidade de cada pessoa e a invenção
+            de caminhos próprios. Isso significa que não existem sessões
+            “iguais” ou receitas prontas: cada encontro é único, construído no
+            diálogo entre a sua experiência e meu olhar clínico.
+          </p>
+          <p>
+            O objetivo é criar um espaço seguro, ético e respeitoso para que
+            você possa se expressar, elaborar suas questões e experimentar novas
+            formas de existir e se relacionar.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img
+          src={plantas}
+          style={{ width: "600px", height: "600px" }}
+          alt="imagem de cadeira e vasos de plantas"
+        />
       </div>
     </section>
   );

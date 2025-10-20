@@ -1,3 +1,5 @@
+import rosto from "../assets/rosto.png";
+
 import { useState } from "react";
 
 const Problemas = () => {
@@ -5,34 +7,19 @@ const Problemas = () => {
 
   const problemas = [
     {
-      titulo: "Ansiedade",
+      titulo: "Atendimento Psicológico Individual ",
       descricao:
-        "Preocupações excessivas que não conseguia controlar, sensação constante de que algo ruim vai acontecer.",
+        "Atendo adolescentes e adultos em processos de autoconhecimento, ansiedade, luto, autoestima, corpo e transições de vida. ",
     },
     {
-      titulo: "Sobrecarga Emocional",
+      titulo: "Oficinas e Grupos",
       descricao:
-        "Sensação de estar sempre no limite, sentimento de estar sobrecarregado com tarefas simples.",
+        "Espaços de partilha e reflexão sobre temas como corpo, identidade, cuidado e subjetividade. As oficinas e grupos terapêuticos são pensados como territórios de criação coletiva, onde o diálogo e o encontro entre experiências se tornam parte do cuidado. Porque também é no coletivo que a vida encontra forma e sentido.",
     },
     {
-      titulo: "Estresse constante",
+      titulo: "Colaborações e Projetos",
       descricao:
-        "Pensamentos acelerados que não desaceleram, dificuldade de concentração e memória.",
-    },
-    {
-      titulo: "Oscilações de Humor",
-      descricao:
-        "Reações desproporcionais a pequenos acontecimentos do dia a dia, Arrependimento frequente, irritabilidade.",
-    },
-    {
-      titulo: "Problemas de Sono",
-      descricao:
-        "Sonolência excessiva como escape emocional, pesadelos recorrentes ou sonhos perturbadores.",
-    },
-    {
-      titulo: "Crise Pessoal",
-      descricao:
-        "Crise de identidade ou valores, busca por propósito e significado.",
+        "Parcerias com profissionais, coletivos e instituições que buscam pensar o cuidado de forma ética e crítica. Podem incluir grupos temáticos, rodas de conversa, ações de saúde mental e produções de conteúdo voltadas à sensibilização e à escuta do outro. ",
     },
   ];
 
@@ -42,8 +29,13 @@ const Problemas = () => {
 
   return (
     <section id="problems" className="py-5">
+      <img
+        src={rosto}
+        alt="imagem de um rosto com flor na cabeça"
+        style={{ width: "200px", height: "200px" }}
+      />
       <div className="container">
-        <h2 className="text-center mb-5">É provável que você já sentiu...</h2>
+        <h2 className="text-center mb-5">Meus Serviços</h2>
 
         <div className="accordion">
           {problemas.map((problema, index) => (

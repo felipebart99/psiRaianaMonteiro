@@ -1,4 +1,4 @@
-import terapiaImg from "../assets/psicoterapia.webp";
+import terapiaImg from "../assets/terapiaImg.jpg";
 import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 
 const Psicoterapia = () => {
@@ -28,7 +28,7 @@ const Psicoterapia = () => {
           Mais informações
         </a>
       </div>
-      <img src={terapiaImg} />
+      <img src={terapiaImg} style={{ width: "600px", height: "500px" }} />
     </section>
   );
 };
