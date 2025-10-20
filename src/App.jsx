@@ -11,7 +11,7 @@ import Agendamento from "./components/Agendamento";
 import Atendimento from "./components/Atendimento";
 import Formulario from "./components/Formulario";
 import Footer from "./components/Footer";
-import Beneficios from "./components/Beneficios";
+import Contato from "./components/Contato";
 
 function App() {
   return (
@@ -21,9 +21,8 @@ function App() {
       <Psicoterapia />
       <Sobre />
       <Problemas />
+      <Contato />
       <Atendimento />
-      <Beneficios />
-      <Agendamento />
       <FAQ />
       <Formulario />
       <Footer />

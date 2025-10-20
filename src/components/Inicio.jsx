@@ -8,7 +8,7 @@ const Inicio = () => {
     <section id="inicio">
       <div className="principal">
         <div className="description text-center text-md-start py-5">
-          <h1 className="title-main">Psicóloga Clínica CRP 02/31814</h1>
+          <h1 className="title-main">Psicóloga Clínica | Raiana Monteiro</h1>
           <h2 className="subtitle">Um espaço de escuta, </h2>
           <h2> presença e criação de sentido </h2>
 
@@ -35,9 +35,14 @@ const Inicio = () => {
             href={whatsAppLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary"
+            style={{
+              backgroundColor: "rgba(215, 224, 182, 1)",
+              borderColor: "rgba(215, 224, 182, 1)",
+              color: "#000", // opcional, deixa o texto visível
+            }}
+            className="btn btn-lg"
           >
-            Agendar sessão
+            AGENDAR UMA CONSULTA
           </a>
         </div>
         <img src={raiana} loading="eager" alt="imagem da psicóloga" />

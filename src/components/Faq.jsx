@@ -1,78 +1,107 @@
 import React from "react";
-import { Accordion, Container } from "react-bootstrap";
+import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 
 const FAQ = () => {
   const faqItems = [
     {
-      question: "Como sei se preciso de terapia?",
+      question: " E se eu não souber por onde começar?",
       answer:
-        "Se você está enfrentando dificuldades emocionais, padrões repetitivos de comportamento que causam sofrimento, ou se sente que sua qualidade de vida está comprometida, a terapia pode ajudar. Qualquer pessoa que queira se conhecer melhor ou melhorar seu bem-estar pode se beneficiar.",
+        "Não há problema. Muitas pessoas chegam à terapia sem saber exatamente o que dizer e isso já faz parte do processo. A escuta é construída juntos, no tempo de cada um. ",
     },
     {
-      question: "Quantas sessões são necessárias?",
+      question: "Como saber se preciso de terapia?",
       answer:
-        "O número de sessões varia conforme cada caso e objetivos terapêuticos. Algumas pessoas sentem melhoras em poucos meses, enquanto outras podem precisar de acompanhamento por mais tempo. Avaliamos isso juntos durante o processo.",
+        "A psicoterapia é indicada não apenas em momentos de sofrimento, mas também para quem deseja se conhecer melhor, compreender suas emoções, fortalecer sua autoestima e melhorar suas relações. ",
     },
     {
-      question: "Como funciona o atendimento online?",
+      question: "Como funciona a terapia online? ",
       answer:
-        "O atendimento online ocorre por plataformas seguras de videoconferência. Você receberá um link de acesso antes de cada sessão. É importante estar em um ambiente privado e confortável durante a sessão.",
+        "As sessões acontecem por videochamada, em um ambiente seguro e reservado. Basta um local tranquilo, com privacidade e boa conexão. A experiência é acolhedora e eficaz, assim como no formato presencial. ",
     },
     {
-      question: "Qual a diferença entre psicólogo e psiquiatra?",
+      question: " Tenho medo de me expor. Isso é normal? ",
       answer:
-        "O psicólogo atua com terapia e processos psicológicos, enquanto o psiquiatra é um médico especializado em diagnóstico e tratamento medicamentoso. Muitas vezes trabalhamos em conjunto para melhor atender o paciente.",
+        "Sim. É comum sentir receio no início. O processo terapêutico respeita seu tempo e seus limites. Aos poucos, o espaço de fala se torna mais natural e seguro. ",
     },
     {
-      question: "Os conteúdos das sessões são confidenciais?",
+      question: "Posso falar sobre qualquer coisa nas sessões? ",
       answer:
-        "Sim, sigilo é um princípio ético fundamental. Tudo discutido nas sessões é confidencial, exceto em situações específicas previstas por lei que envolvam risco à vida.",
+        "Sim. O espaço terapêutico é um lugar de escuta livre de julgamentos, onde todas as vivências, emoções e pensamentos podem ser compartilhados. ",
     },
     {
-      question: "A psicoterapia online tem a mesma eficácia da presencial?",
+      question: "Minha privacidade será protegida? ",
       answer:
-        "Sim. Diversos estudos mostram que a psicoterapia online é tão eficaz quanto a presencial, desde que realizada em um ambiente reservado, com boa conexão e comprometimento do paciente. O vínculo terapêutico e a qualidade do atendimento permanecem os mesmos.",
+        "Sim. O Código de Ética Profissional do Psicólogo assegura o sigilo profissional, garantindo que tudo o que é dito em sessão permanece em confidencialidade, mesmo após o término do acompanhamento. ",
     },
     {
-      question:
-        "Como funciona a questão da privacidade e da confidencialidade?",
-      answer:
-        "A privacidade é uma prioridade. As sessões são realizadas em plataformas seguras e sigilosas, e todas as informações compartilhadas são protegidas pelo código de ética profissional do psicólogo, garantindo total confidencialidade do que é dito em sessão.",
+      question: "Qual é o preço da sessão?",
+      answer: `De acordo com o Código de Ética Profissional do Psicólogo, o valor das sessões só pode ser informado diretamente ao paciente. Para receber informações sobre valores e formas de pagamento entre em contato pelo WhatsApp.`,
     },
     {
-      question: "E se eu tiver dificuldade com a tecnologia?",
+      question: "Quais são as formas de pagamento aceitas? ",
       answer:
-        "Não há problema. Antes da primeira sessão, a psicóloga pode orientar você sobre como acessar a plataforma e realizar testes simples de áudio e vídeo. O processo é pensado para ser acessível mesmo para quem não tem muita familiaridade com tecnologia.",
+        "O pagamento pode ser feito via PIX ou transferência bancária, de forma semanal ou mensal. Para combinar valores e formas de pagamento, basta clicar no botão flutuante para entrar em contato. ",
     },
   ];
 
   return (
-    <section id="faq" className="py-5 ">
+    <section id="faq" className="py-5">
       <Container>
-        <h2 className="text-center mb-5">Perguntas Frequentes</h2>
+        <h2 className="text-center mb-5">Principais Dúvidas</h2>
 
-        <Accordion flush>
-          {faqItems.map((item, index) => (
-            <Accordion.Item
-              eventKey={index.toString()}
-              key={index}
-              className="mb-3 border-0 shadow-sm"
-            >
-              <Accordion.Header className="fw-bold">
-                {item.question}
-              </Accordion.Header>
-              <Accordion.Body className="bg-white">
-                {item.answer}
-              </Accordion.Body>
-            </Accordion.Item>
-          ))}
-        </Accordion>
+        <Row>
+          <Col md={6}>
+            <Accordion flush>
+              {faqItems
+                .slice(0, Math.ceil(faqItems.length / 2)) // primeira metade
+                .map((item, index) => (
+                  <Accordion.Item
+                    eventKey={index.toString()}
+                    key={index}
+                    className="mb-3 border-0 shadow-sm"
+                  >
+                    <Accordion.Header className="fw-bold">
+                      {item.question}
+                    </Accordion.Header>
+                    <Accordion.Body
+                      className="bg-white"
+                      dangerouslySetInnerHTML={{ __html: item.answer }}
+                    />
+                  </Accordion.Item>
+                ))}
+            </Accordion>
+          </Col>
+
+          <Col md={6}>
+            <Accordion flush>
+              {faqItems
+                .slice(Math.ceil(faqItems.length / 2)) // segunda metade
+                .map((item, index) => (
+                  <Accordion.Item
+                    eventKey={(
+                      index + Math.ceil(faqItems.length / 2)
+                    ).toString()}
+                    key={index + "right"}
+                    className="mb-3 border-0 shadow-sm"
+                  >
+                    <Accordion.Header className="fw-bold">
+                      {item.question}
+                    </Accordion.Header>
+                    <Accordion.Body
+                      className="bg-white"
+                      dangerouslySetInnerHTML={{ __html: item.answer }}
+                    />
+                  </Accordion.Item>
+                ))}
+            </Accordion>
+          </Col>
+        </Row>
 
         <div className="text-center mt-4">
           <p className="text-muted">
-            Não encontrou sua dúvida?
-            <a href={whatsAppLink} target="_blank">
+            Não encontrou sua dúvida?{" "}
+            <a href={whatsAppLink} target="_blank" rel="noopener noreferrer">
               Pergunte aqui!
             </a>
           </p>

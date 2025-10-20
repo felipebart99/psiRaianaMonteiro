@@ -49,7 +49,7 @@ html {
 /* Espaçamento entre seções */
 section {
   min-height: 60vh;
-  padding: 0px;
+  padding: 20px;
   padding-top: 80px;
   padding-bottom: 40px;
 }
@@ -80,6 +80,8 @@ section {
 }
 #inicio {
   background-color: rgba(245, 240, 237, 1);
+  background-image: url("./assets/fundo.png");
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,11 +241,28 @@ section {
 }
 #problems {
   background-color: rgba(245, 240, 237, 1);
-  position: relative;
-  img {
-    position: absolute;
-    top: 0; /* fica no topo */
-    left: 0; /* encosta na esquerda */
+  background-image: url("./assets/fundo.png");
+  background-repeat: no-repeat; /* evita repetir a imagem */
+  background-size: cover; /* faz preencher todo o fundo */
+  background-position: center;
+}
+#contato .principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 300px;
+  padding: 20px; /* ajusta aqui pra não quebrar a altura */
+  box-sizing: border-box; /* inclui padding dentro da altura */
+  color: rgb(0, 0, 0);
+
+  h2 {
+    color: rgb(0, 0, 0);
+  }
+  .btn-cor {
+    background-color: rgba(94, 137, 182, 1);
   }
 }
 #agendamento {

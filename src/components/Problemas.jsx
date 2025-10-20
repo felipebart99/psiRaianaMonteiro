@@ -29,11 +29,6 @@ const Problemas = () => {
 
   return (
     <section id="problems" className="py-5">
-      <img
-        src={rosto}
-        alt="imagem de um rosto com flor na cabeça"
-        style={{ width: "200px", height: "200px" }}
-      />
       <div className="container">
         <h2 className="text-center mb-5">Meus Serviços</h2>
 
