@@ -6,7 +6,6 @@ const Contato = () => {
       id="contato"
       style={{
         position: "relative",
-        backgroundColor: "rgba(215, 224, 182, 1)",
       }}
     >
       {/* Overlay com opacidade só no fundo */}

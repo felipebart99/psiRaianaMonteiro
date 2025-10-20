@@ -61,7 +61,7 @@ section {
 }
 .navbar {
   width: 100vw;
-  background-color: #fed2d1;
+  background-color: rgba(215, 224, 182, 1);
 }
 .btn.btn-primary {
   background-color: #3498db;
@@ -81,12 +81,20 @@ section {
 #inicio {
   background-color: rgba(245, 240, 237, 1);
   background-image: url("./assets/fundo.png");
-
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
 
+  .folha {
+    position: absolute; /* permite posicionamento absoluto */
+    bottom: 0; /* encosta na parte inferior */
+    right: 0; /* encosta na direita */
+    width: 400px; /* ajusta o tamanho */
+    height: 600; /* mantém proporção */
+    z-index: 1; /* fica atrás ou na frente de outros elementos */
+  }
   .principal {
     display: flex;
     justify-content: center;
@@ -223,7 +231,7 @@ section {
 }
 
 #sobre {
-  background-color: rgba(255, 192, 203, 0.37);
+  background-color: beige;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,10 +267,12 @@ section {
   color: rgb(0, 0, 0);
 
   h2 {
-    color: rgb(0, 0, 0);
+    color: rgb(99, 17, 17);
   }
   .btn-cor {
-    background-color: rgba(94, 137, 182, 1);
+    background-color: rgb(254, 254, 254);
+
+    margin-left: 20px;
   }
 }
 #agendamento {

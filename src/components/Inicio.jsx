@@ -1,4 +1,5 @@
 import raiana from "../assets/raiana.png";
+import folhagem from "../assets/folhagem.jpg";
 
 import Typewriter from "./Typewriter";
 import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
@@ -6,6 +7,7 @@ import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 const Inicio = () => {
   return (
     <section id="inicio">
+      <img src={folhagem} alt="imagem de folhas" className="folha" />
       <div className="principal">
         <div className="description text-center text-md-start py-5">
           <h1 className="title-main">Psicóloga Clínica | Raiana Monteiro</h1>

@@ -11,7 +11,7 @@ const NavBar = () => {
   };
 
   return (
-    <Navbar bg="light" expand="lg" className="py-3 navbar" sticky="top">
+    <Navbar expand="lg" className="py-3 navbar" sticky="top">
       <Container>
         <Navbar.Brand href="#inicio" onClick={() => handleScroll("inicio")}>
           <img
