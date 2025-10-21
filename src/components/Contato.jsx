@@ -28,7 +28,7 @@ const Contato = () => {
           Clique abaixo para saber mais sobre o processo ou agendar um
           atendimento.
         </p>
-        <div>
+        <div className="btns">
           <a
             href={whatsAppLink}
             target="_blank"

@@ -1,5 +1,5 @@
-import raiana from "../assets/raiana.png";
-import folhagem from "../assets/folhagem.jpg";
+import raiana from "../assets/raianaSF.png";
+import folhagem from "../assets/folhagemSF.png";
 
 import Typewriter from "./Typewriter";
 import { whatsAppLink } from "./WhatsApp/WhatsAppLink";

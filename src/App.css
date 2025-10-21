@@ -48,7 +48,6 @@ html {
 }
 /* Espaçamento entre seções */
 section {
-  min-height: 60vh;
   padding: 20px;
   padding-top: 80px;
   padding-bottom: 40px;
@@ -81,6 +80,9 @@ section {
 #inicio {
   background-color: rgba(245, 240, 237, 1);
   background-image: url("./assets/fundo.png");
+  background-repeat: no-repeat; /* evita repetir a imagem */
+  background-size: cover; /* faz preencher todo o fundo */
+  background-position: center; /* centraliza */
   position: relative;
   display: flex;
   justify-content: center;
@@ -88,13 +90,16 @@ section {
   gap: 80px;
 
   .folha {
-    position: absolute; /* permite posicionamento absoluto */
-    bottom: 0; /* encosta na parte inferior */
-    right: 0; /* encosta na direita */
-    width: 400px; /* ajusta o tamanho */
-    height: 600; /* mantém proporção */
-    z-index: 1; /* fica atrás ou na frente de outros elementos */
+    position: absolute;
+    bottom: -80px; /* desce 80px abaixo do limite inferior */
+    right: 0;
+    width: 450px;
+    height: 900px; /* mantém a proporção da imagem */
+    z-index: 1;
+    margin: 0;
+    padding: 0;
   }
+
   .principal {
     display: flex;
     justify-content: center;
@@ -121,6 +126,7 @@ section {
       width: 600px;
       border-radius: 2em;
       padding-top: -100px;
+      z-index: 1;
     }
   }
 
@@ -228,6 +234,10 @@ section {
     max-width: 800px;
     padding: 60px;
   }
+  img {
+    width: 600px;
+    height: 500px;
+  }
 }
 
 #sobre {
@@ -248,11 +258,12 @@ section {
   }
 }
 #problems {
-  background-color: rgba(245, 240, 237, 1);
-  background-image: url("./assets/fundo.png");
-  background-repeat: no-repeat; /* evita repetir a imagem */
-  background-size: cover; /* faz preencher todo o fundo */
-  background-position: center;
+  background-color: rgba(233, 229, 225, 1);
+  max-height: 200px;
+  min-height: 500px;
+  h2 {
+    color: rgb(99, 17, 17);
+  }
 }
 #contato .principal {
   display: flex;
@@ -269,10 +280,15 @@ section {
   h2 {
     color: rgb(99, 17, 17);
   }
-  .btn-cor {
-    background-color: rgb(254, 254, 254);
-
-    margin-left: 20px;
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .btn-cor {
+      background-color: rgb(254, 254, 254);
+      margin-left: 20px;
+    }
   }
 }
 #agendamento {
@@ -326,6 +342,10 @@ section {
     justify-content: center;
     max-width: 1000px;
   }
+  img {
+    width: 600px;
+    height: 600px;
+  }
 }
 
 #beneficios {
@@ -378,7 +398,7 @@ section {
     margin-top: 2rem;
   }
   .form-container {
-    background-color: #ffffff;
+    background-color: rgba(215, 224, 182, 1);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -419,8 +439,15 @@ section {
     height: 50px;
   }
   #inicio {
-    padding-top: 32px;
-
+    .folha {
+      position: absolute;
+      top: 0px; /* desce 80px abaixo do limite inferior */
+      right: 0;
+      width: 300px;
+      height: 550px; /* mantém a proporção da imagem */
+      z-index: 1;
+      margin-top: -50px;
+    }
     .principal {
       flex-direction: column-reverse;
       gap: 0;
@@ -430,21 +457,13 @@ section {
       }
       img {
         width: 100%;
-        height: 350px;
+        height: 400px;
         object-fit: contain; /* ou "cover" */
-        margin-top: -80px;
+        margin-top: -50px;
       }
     }
   }
   #problems {
-    h3 {
-      font-size: large;
-      font-weight: 700;
-    }
-    .principal {
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
   }
   #gestalt {
     flex-direction: column;
@@ -459,7 +478,8 @@ section {
       padding: 10px;
     }
     img {
-      width: 70vw;
+      width: 400px;
+      height: auto;
     }
   }
   #sobre {
@@ -472,6 +492,16 @@ section {
   #agendamento {
     .metodos {
       grid-template-columns: 1fr;
+    }
+  }
+
+  #atendimento {
+    flex-direction: column;
+    gap: 0px;
+
+    img {
+      width: 300px;
+      height: 300px;
     }
   }
 }

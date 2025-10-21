@@ -25,11 +25,7 @@ const Atendimento = () => {
         </div>
       </div>
       <div>
-        <img
-          src={plantas}
-          style={{ width: "600px", height: "600px" }}
-          alt="imagem de cadeira e vasos de plantas"
-        />
+        <img src={plantas} alt="imagem de cadeira e vasos de plantas" />
       </div>
     </section>
   );

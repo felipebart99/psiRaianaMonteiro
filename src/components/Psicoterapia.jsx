@@ -37,7 +37,7 @@ const Psicoterapia = () => {
           Mais informações
         </a>
       </div>
-      <img src={terapiaImg} style={{ width: "600px", height: "500px" }} />
+      <img src={terapiaImg} />
     </section>
   );
 };

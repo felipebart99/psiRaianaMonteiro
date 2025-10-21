@@ -1,5 +1,3 @@
-import rosto from "../assets/rosto.png";
-
 import { useState } from "react";
 
 const Problemas = () => {
