@@ -7,7 +7,6 @@ import FAQ from "./components/Faq";
 import WhatsAppButton from "./components/WhatsApp/WhatsAppButton";
 import Psicoterapia from "./components/Psicoterapia";
 import Sobre from "./components/Sobre";
-import Agendamento from "./components/Agendamento";
 import Atendimento from "./components/Atendimento";
 import Formulario from "./components/Formulario";
 import Footer from "./components/Footer";

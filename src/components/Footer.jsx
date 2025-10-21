@@ -14,12 +14,12 @@ const Footer = () => {
           >
             raianamonteiropsicologia@gmail.com
           </a>
-          |
+        </p>
+        <p>
           <a href={whatsAppLink} target="_blank" class="text-white">
             +55(81)99293-5806
           </a>
         </p>
-
         <div class="social-icons mb-3 text-white">
           <a
             href="https://www.instagram.com/raianamonteiro.psi"
@@ -27,6 +27,13 @@ const Footer = () => {
             class="text-white mx-2"
           >
             <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/raianamonteiro.psi"
+            target="_blank"
+            class="text-white mx-2"
+          >
+            <i class="bi bi-linkedin"></i>
           </a>
         </div>
 

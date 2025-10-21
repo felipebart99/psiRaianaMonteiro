@@ -7,7 +7,6 @@ const Psicoterapia = () => {
       <div className="principal">
         <h2 class="mb-4">Como saber se é hora de fazer psicoterapia?</h2>
         <p>
-          <i class="bi bi-check-square-fill text-primary"> </i>
           Não existe um único “momento certo”, mas algumas situações podem
           indicar que a psicoterapia pode ser importante para você:
         </p>
@@ -20,8 +19,10 @@ const Psicoterapia = () => {
           lidar sozinho(a). <br />
           <i class="bi bi-check-square-fill text-primary"> </i>
           Se problemas ou conflitos se repetem e você já não sabe como
-          enfrentar. <br /> Quando mudanças na vida (perdas, escolhas,
-          relacionamentos) trazem dúvidas e sofrimento.
+          enfrentar. <br />
+          <i class="bi bi-check-square-fill text-primary"> </i>
+          Quando mudanças na vida (perdas, escolhas, relacionamentos) trazem
+          dúvidas e sofrimento.
         </p>
         <a
           href={whatsAppLink}
