@@ -438,8 +438,8 @@ section {
 }
 @media (max-width: 1024px) {
   .logo-img {
-    width: 120px;
-    height: 50px;
+    width: 90px;
+    height: 45px;
   }
   #inicio {
     .folha {

@@ -1,4 +1,4 @@
-import raiana from "../assets/raianaPerfil.png";
+import raiana from "../assets/raianaPerfil.jpeg";
 import Typewriter from "../../src/components/Typewriter";
 import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 

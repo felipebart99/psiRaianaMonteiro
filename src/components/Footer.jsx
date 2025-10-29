@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer class="footer bg-secondary text-dark py-4 mt-5">
       <div class="container text-center text-white">
-        <h5 class="fw-bold mb-2">Dra. Raiana Monteiro</h5>
-        <p class="mb-2">Psicóloga | CRP 02/32814</p>
+        <h5 class="fw-bold mb-2">Raiana Monteiro</h5>
+        <p class="mb-2">Psicóloga | CRP 02/31814</p>
 
         <p class="mb-3">
           <a
@@ -29,7 +29,7 @@ const Footer = () => {
             <i class="bi bi-instagram"></i>
           </a>
           <a
-            href="https://www.instagram.com/raianamonteiro.psi"
+            href="https://www.linkedin.com/in/raiana-monteiro-488626217"
             target="_blank"
             class="text-white mx-2"
           >
