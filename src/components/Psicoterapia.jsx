@@ -38,7 +38,10 @@ const Psicoterapia = () => {
           Mais informações
         </a>
       </div>
-      <img src={terapiaImg} />
+      <img
+        src={terapiaImg}
+        alt="duas cadeiras simbolizando a psicologa e o paciente"
+      />
     </section>
   );
 };

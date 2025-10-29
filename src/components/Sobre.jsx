@@ -5,7 +5,7 @@ import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
 const Sobre = () => {
   return (
     <section id="sobre">
-      <img src={raiana} />
+      <img src={raiana} alt="foto da psicóloga em sua casa" />
       <div className="principal">
         <h2>
           <Typewriter text="Raiana Monteiro" speed={100} startOnView={true} />
